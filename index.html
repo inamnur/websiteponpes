@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no">
+  
+  <title>ponpes keren</title>
+  <!-- Font Awesome CDN untuk ikon -->
+  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+<div class="isi">
+  <!-- Navbar -->
+  <center>
+  <nav>
+    <ul>
+      <li><a href="#home"><i class="fa fa-home"></i><span class="nav-text"> Beranda</span></a></li>
+      <li><a href="#ppdb"><i class="fa fa-user-graduate"></i><span class="nav-text"> PPDB</span></a></li>
+      <li><a href="#program"><i class="fa fa-chalkboard-teacher"></i><span class="nav-text"> Program</span></a></li>
+      <li><a href="#beasiswa"><i class="fa fa-award"></i><span class="nav-text"> Beasiswa</span></a></li>
+      <li><a href="#Contact Us"><i class="fa fa-envelope"></i><span class="nav-text"> Contact Us</span></a></li>
+      <li><a href="https://www.perpusnas.go.id/"><i class="fa fa-book"></i><span class="nav-text">Perpustakan</span></a></li>
+    </ul>
+  </nav>
+  </center>
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="slideshow-container">
+    <div class="slide"><img src="ngaji kitab.jpg" alt="Gambar 2"></div>
+    <div class="slide"><img src="Setoran Hafalan.JPG" alt="Gambar 3"></div>
+    <div class="slide"><img src="masjid zae.jpg" alt="Gambar 3"></div>
+    <div class="slide"><img src="harlah.JPG" alt="Gambar 3"></div>
+    <div class="content">
+      <h1>Selamat Datang di Pondok Pesantren Al-Qur'an Zaenuddin</h1>
+      <p>Mengukir prestasi berakhlak Qur'ani</p>
+      <a href="#ppdb" class="btn">Daftar Sekarang</a>
+    
+    </div>
+  </header>
+  <script>
+    let slideIndex = 0;
+    function showSlides() {
+      let slides = document.querySelectorAll(".slide");
+      slides.forEach(slide => slide.style.display = "0");
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].style.opacity = "1";
+      slides[slideIndex].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+    document.addEventListener("DOMContentLoaded", showSlides);
+  </script>
+
+  <!-- Profil Pengasuh -->
+  <section id="pengasuh">
+    <h2>Profil Pengasuh</h2>
+    <div class="profile">
+      <img src="abi.jpg" alt="Foto Pengasuh" />
+      <h3>KH.Lukman Al-Hakim Al-Hakim</h3>
+      <p>
+        Pengasuh memiliki pengalaman luas dalam mendidik dan membimbing para santri.
+        Dengan hati yang tulus, sabar serta tegas dalam mendidik santrinya, beliau menjadi inspirasi dan panutan dalam mencetak generasi yang berakhlak mengikuti ajaran rasulullah serta cerdas.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Kepala Sekolah SMK dan SMP -->
+  <section id="kepala-sekolah">
+    <h2>Kepala Sekolah</h2>
+    <div class="flex">
+      <!-- Kepala Sekolah SMK -->
+      <div class="card">
+        <img src="kepsek smk.jpg" class="bundar" alt="Kepala Sekolah SMK"  />
+        <h3 class="min">Kepala Sekolah SMK</h3>
+        <p class="min">
+          Beliau memiliki pengalaman pendidikan yang mendalam dan komitmen tinggi untuk mengembangkan potensi siswa di SMK melalui inovasi dan pembelajaran berbasis industri.</p>
+      </div>
+      <!-- Kepala Sekolah SMP -->
+      <div class="card">
+        <img src="kepsek smp.JPG" class="bundar" alt="Kepala Sekolah SMP"  />
+        <h3 class="min">Kepala Sekolah SMP</h3>
+        <p class="min">Dengan pendekatan kepemimpinan yang inspiratif, beliau menciptakan lingkungan belajar yang kondusif dan mendukung perkembangan karakter serta akademik siswa.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pendidikan yang Ditawarkan -->
+  <section id="program">
+    <h2>Program Pendidikan</h2>
+    <div class="list-section">
+      <ul>
+        <li><b>SMK:</b></li>
+        <li>PPLG</li>
+        <li>DKV</li>
+      </ul>
+      <ul>
+        <li><b>SMP:</b></li>
+        <li>Unggulan</li>
+        <li>Reguler</li>
+      </ul>
+      <ul>
+        <li><b>TAHFIDZ:</b></li>
+        <li>Smart Tahfidz</li>
+        <li>Regular</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Fasilitas -->
+  <section id="fasilitas">
+    <h2>Sarana Pendukung</h2>
+    <div class="list-section">
+      <ul>
+        <li>Masjid dengan kapasitas 1000 jamaah</li>
+        <li>Asrama putra dan putri (65 kamar)</li>
+        <li>Aula/ruang pertemuan</li>
+        <li>16 ruang kelas</li>
+        <li>Perpustakaan</li>
+        <li>Lab.PPLG</li>
+        <li>Lab.DKV</li>
+        <li>Lab.IPA</li>
+        <li>70 Kamar mandi</li>
+        <li>Lapangan olahraga</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Persyaratan -->
+  <section id="persyaratan">
+    <h2>Persyaratan Pendaftaran</h2>
+    <div class="list-section">
+      <ul>
+        <li>Fotocopy KK</li>
+        <li>Fotocopy Akte kelahiran</li>
+        <li>Fotocopy KTP Orang Tua</li>
+        <li>Pas Foto 3X4 (2 Lembar)</li>
+        <li>Fotocopy Nilai Raport (Semester 1 kelas VI atau kelas XI)</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- PPDB Section -->
+  <section id="ppdb">
+    <h2>Penerimaan Peserta Didik Baru (PPDB)</h2>
+    <p>
+      Bergabunglah bersama kami dan wujudkan potensi terbaik Anda. Pondok Pesantren Al-Qur'an Zaenuddin menyediakan pendidikan berkualitas dengan program unggulan yang mengintegrasikan aspek akademik dan karakter berlandaskan Al-Qur'an. Segera daftarkan diri Anda untuk meraih masa depan yang gemilang!
+    </p>
+    <a href="http://bit.ly/PSB-Al-QuranZaenuddin" class="btn">Daftar Sekarang</a>
+  </section>
+  
+  <!-- Beasiswa -->
+  <section id="beasiswa">
+    <h2>Beasiswa</h2>
+    <div class="list-section">
+      <ul>
+        <li>Beasiswa Berpestasi (Tahfidz, MTQ, OSN, Mapsi)</li>
+        <li>Beasiswa Smart Tahfidz</li>
+        <li>Beasiswa Luar Negri</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Penawaran Sekolah -->
+  <section id="penawaran">
+    <h2>Penawaran Sekolah</h2>
+    <center>
+      <p style="text-align: center; max-width:800px; margin: auto 0 40px; font-size: 1.2em;">
+        Kami menyediakan pendidikan berkualitas dengan program-program unggulan yang mengintegrasikan aspek akademik dan karakter yang didukung dengan berbagai fasilitas yang menunjang kegiatan belajar santri, sehingga dapat mempersiapkan siswa menghadapi tantangan masa depan.
+      </p>
+    </center>
+    <div class="flex">
+      <div class="card offer-card">
+        <img src="f.png" width="50%" height="40%" alt="Program Akademik" />
+        <h3>Program Akademik Unggulan</h3>
+        <p>
+         Bergabunglah dengan kami dalam perjalanan menuju prestasi akademik yang gemilang dengan kurikulum berkualitas dan dukungan dari tenaga pendidik yang berpengalaman.</p>
+      </div>
+      <div class="card offer-card">
+        <img src="eskul.jpg" width="50%" height="40%" alt="Kegiatan Ekstrakurikuler" />
+        <h3>Kegiatan Ekstrakurikuler Pramuka</h3>
+        <p>
+          Temukan dunia baru di luar ruang kelas dengan berbagai kegiatan ekstrakurikuler untuk mengembangkan minat dan bakat serta mendukung perkembangan karakter</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="http://bit.ly/PSB-Al-QuranZaenuddin" class="btn" id="daftarBtn">Daftar Sekarang</a>
+    </div>
+  </section>
+  
+  <!-- Ekstrakurikuler -->
+  <section id="ekstrakurikuler">
+    <h2>Ekstrakurikuler</h2>
+    <ul>
+      <li>Tilawatil Qur'an</li>
+      <li>Qiroatul Kutub</li>
+      <li>Tamrinul khitobah</li>
+      <li>Keorganisasian santri</li>
+      <li>Hadroh</li>
+      <li>OSIS</li>
+      <li>PMR</li>
+      <li>Bola Voli</li>
+      <li>KIR</li>
+      <li>Paskibra</li>
+      <li>Videografer</li>
+      <li>Public Speaking</li>
+      <li>Pramuka</li>
+      <li>Kaligrafi</li>
+    </ul>
+  
+    <!-- Galeri Kegiatan (Slider) -->
+    <script>
+      // Slider JavaScript
+      let slideIndex = 0;
+      const slides = document.querySelectorAll('.slider img');
+      function showSlide(index) {
+        const slider = document.querySelector('.slider');
+        slider.style.transform = 'translateX(' + (-index * 100) + '%)';
+      }
+      function nextSlide() {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+      }
+      function prevSlide() {
+        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        showSlide(slideIndex);
+      }
+      // Auto slide setiap 5 detik
+      setInterval(nextSlide, 5000);
+    </script>
+    <h2>Kegiatan Kami</h2>
+    <div class="gallery">
+      <section id="gallery">
+        <div class="slider-container">
+          <div class="slider">
+            <img src="ngaji kitab.jpg" class="slider-item" alt="ngaji kitab bersama" />
+            <br>
+            <img src="burdah.JPG" class="slider-item" alt="Kegiatan 2" />
+            <br>
+            <img src="Setoran Hafalan.JPG" class="slider-item" alt="Kegiatan 3" />
+            <br>
+            <img src="h.jpg" class="slider-item" alt="pembelajaran kitab kuning">
+            <br>
+            <img src="sablon.jpg" class="slider-item" alt="masa mpls">
+            <br>
+            <img src="osis.jpg" class="slider-item" alt="masa mpls">
+            <br>
+            <img src="harlah.JPG" class="slider-item" alt="masa mpls">
+          </div>
+          <button class="prev-btn" onclick="prevSlide()">&lt;</button>
+          <button class="next-btn" onclick="nextSlide()">&gt;</button>
+        </div>
+      </section>
+    </div>
+  </section>
+  
+  <!-- Profil Pondok -->
+  <section id="profil">
+    <h2>Profil Pondok</h2>
+    <div class="gallery">
+      <center>
+        <iframe width="700vw" height="400vh" src="https://www.youtube.com/embed/CvGEBkpMAkU?si=0u6NciNpWuUqDaMF" title="Profil ponpes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </center>
+    </div>
+  </section>
+  
+  <!-- Contact Us -->
+  <section id="Contact Us">
+    <h2>Contact Us</h2>
+    <div class="kontak">
+      <center>
+
+        <a href="https://alquranzaenuddin.ponpes.id/2022/06/27/wisuda-dan-tasyakuran-kelulusan-smp-dan-smk-al-quran-zaenuddin"><p style="font-size: 14px;"><img width="2%" height="2%" src="iconwb.png"> www.alquranzaenuddin.ponpes.id</p></a>
+        <a href="https://www.facebook.com/ponpesalquranzaenuddin/"><p style="font-size: 14px;"><img width="2%" height="2%" src="iconfb.png"> Ponpes Al-Qur'an Zaenuddin</p></a>
+        <a href="https://www.instagram.com/ponpes_alquranzaenuddin/?hl=en"><p style="font-size: 14px;"><img width="3%" height="3%" src="iconig.png"> @ponpes_alquranzaenuddin</p></a>
+        <a href="https://www.youtube.com/@ponpesalza6717"><p style="font-size: 14px;"><img width="2%" height="3%" src="yticon.png"> Ponpes Alza</p></a>
+         <a href="https://maps.app.goo.gl/ftV2WQ7ETDcfix8SA"><p style="font-size: 14px;"><img width="2%" height="2%" src="iconi.png">Jl.pantura tegal-pemalang KM.09 Ds.Maribaya, Kramat, Tegal(52181)</p></a>
+      </center>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; in'am nur arkhami 2025. All rights reserved.</p>
+  </footer>
+  </div>
+  <script src="script.js">
+  
+  </script>
+</body>
+</html>

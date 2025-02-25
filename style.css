@@ -1,0 +1,410 @@
+/* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  
+
+    body {
+      font-family: roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #cce7c9;
+      background-color: thistle;
+      font-size: 1.5vw;
+      width: auto;
+      height: auto;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Navbar */
+    nav {
+      width: 100%;
+      height: 10%;
+      background: rosybrown;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 10px 20px;
+      overflow: hidden;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    nav li {
+      margin-left: 30px;
+    }
+    nav a {
+      color: #fff;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+      display: flex;
+      align-items: center;
+    }
+    nav a:hover {
+      color: #3A5311;
+    }
+    /* Teks ikon pada navbar */
+    nav a .nav-text {
+      margin-left: 8px;
+    }
+    /* Header / Hero Section */
+    header {
+      transition: opacity 1s ease-in-out;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      color: #fff;
+      padding-top: 60px; /* space for navbar */
+    }
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: auto;;
+      opacity: 0;
+      transition: opacity 3s ease-in-out;
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    header .content {
+      position: relative;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 3.5em;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.5em;
+    }
+    /* Button */
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      margin-top: 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      background: rosybrown;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #FFB6C1;
+    }
+    /* Section Styles */
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #2c3e50;
+      background-color: beige;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    /* Profil Pengasuh */
+    .profile {
+      text-align: center;
+    }
+    img.bundar {
+        width: 10vw;            /* Lebar berdasarkan persentase dari viewport */
+        height: 10vw;           /* Tinggi disesuaikan dengan lebar */
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #ddd;
+    }
+    /* Flex Container untuk Card */
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      object-fit: cover;
+    }
+    .card {
+      background: #F5F5DC;
+      padding: 20px;
+      flex: 1;
+      min-width: 280px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #ccc;
+    }
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 1.8em;
+      color: #34495e;
+    }
+    .card p {
+      font-size: 1em;
+      color: #555;
+    }
+    /* Penawaran Sekolah Cards */
+    /* Penawaran Sekolah Cards */
+    .offer-card {
+    background: #F5F5DC;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    margin: 10px;
+    height: auto;
+  
+  }
+  
+  .offer-card img {
+    width: 50%;      /* Mengambil lebar penuh container */
+    height: 40%;     /* Menjaga proporsi gambar */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+
+  }
+  
+
+
+    /* Gallery Section */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+    /* Slider Styles */
+    .slider-container {
+      width: 500px; /* Adjust as needed */
+      margin: 0 auto;
+      position: relative; /* For button positioning */
+      overflow: hidden;
+
+    }
+    .slider {
+      display: flex; /* Arrange images horizontally */
+      transition: transform 20s ease-in-out; /* Smooth sliding */
+      width: 500%; /* 5 images take 5x the width */
+    }
+    .slider img {
+      width: 20%; /* Each image takes 1/5 of the slider width */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover;
+    }
+    
+    .prev-btn, .next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #f0f0f0;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      opacity: 0.8;
+      transition: opacity 10s ease;
+    }
+    .prev-btn:hover, .next-btn:hover {
+      opacity: 1;
+    }
+    .prev-btn {
+      left: 10px;
+    }
+    .next-btn {
+      right: 10px;
+    }
+    /* List Section untuk Pendidikan, Fasilitas, Persyaratan */
+    .list-section {
+      margin-bottom: 40px;
+      font-size: 1.1em;
+    }
+    .list-section ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #555;
+    }
+    .list-section li {
+      margin: 10px 0;
+    }
+    /* PPDB Section */
+    #ppdb {
+      background: #F5F5DC;
+      padding: 80px 20px;
+      text-align: center;
+      border-top: 5px solid rosybrown;
+    }
+    #ppdb h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    #ppdb p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      color: #555;
+    }
+    .kontak {
+      word-spacing: 0.1em;
+    }
+    /* Footer */
+    footer {
+      background: rosybrown;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      width: 100% auto;
+      height: 100% auto;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.2em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      nav ul {
+        flex-direction: row;
+        justify-content: center;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+      body {
+        font-size: 1.2em;
+      }
+      body h2{
+        font-size: 1.2em;
+      }
+      .slider-container {
+        width: 100%;
+      }
+      /* Hanya tampilkan ikon pada navbar saat layar kecil */
+      nav a .nav-text {
+        display: none;
+      }
+      nav a i {
+        font-size: 1.5em;
+      }
+        .offer-card {
+         width: 90%;
+        margin: 10px auto;
+        height: 100% auto;
+        }
+      .kontak{
+        font-size: medium;
+        src: format(constantly);
+      }
+     #home{
+    object-fit: cover;
+     }
+     #home.img{
+      object-fit: cover;
+      object-position: all;
+     }
+     .isi{
+      object-fit: cover;
+      overflow-x: auto;
+     }
+     .card{
+      height: auto;
+      width: auto;
+      scroll-behavior: smooth;
+      font-size: 1.2em;
+     }
+     .flex{
+      width: auto;
+      height: auto;
+      font-size: 1.2em;
+     }
+     #kepala-sekolah.h3{
+      font-size: 1.2em;
+     }
+    #kepala-sekolah.p{
+      font-size: 1.2em;
+     }
+     .h3{
+      font-size: 1.2em;
+      scroll-behavior: smooth;
+     }
+     .p{
+      font-size: 1.1em
+     }
+     #kepala-sekolah {
+      width: auto;         
+      height: auto; 
+      font-size: 1.2em;      
+    }
+    body h3{
+        font-size: 1.2em;
+      }
+      .card p {
+    font-size: 0.8em;
+  }
+  .card {
+    padding: 15px;
+  }
+  .card h3 {
+    font-size: 1.4em;
+  }
+  .card p {
+    font-size: 0.7em;
+  }
+  .min {
+    font-size: 1,2em;
+  }
+    }
+
+
+
+
+
+
+  
